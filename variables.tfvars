@@ -1,0 +1,7 @@
+aws_region         = "us-east-1"
+instance_type      = "t2.micro"
+ami                = "ami-0c02fb55956c7d316"
+vpc_cidr           = "172.16.0.0/16"
+subnet_cidr        = "172.16.1.0/24"
+availability_zone  = "us-east-1a"
+key_name           = "vockey"

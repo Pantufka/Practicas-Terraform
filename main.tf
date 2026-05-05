@@ -1,11 +1,11 @@
 provider "aws" {
-  region = "us-east-1"
+  region = var.aws_region
 }
 
 resource "aws_instance" "Instancia-Terraform" {
-  ami           = "ami-098e39bafa7e7303d"
-  instance_type = "t2.micro"
-  key_name      = "vockey"
+  ami           = var.ami
+  instance_type = var.instance_type
+  key_name      = var.key_name
 
   vpc_security_group_ids = [aws_security_group.test_sg.id]
 
